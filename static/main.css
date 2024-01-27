@@ -1,0 +1,65 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  
+}
+
+body{
+   background-color: rgb(210, 224, 237);
+}
+
+*{
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+   display: grid;
+   place-items: center;
+   height: 90vh;
+}
+.content{
+   align-items: center;
+   border: none;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   height: 25rem;
+   height: 60vh;
+   justify-content: center;
+   width: 20rem;
+   border-radius: 30px;
+   box-shadow: 10px 10px 10px -1px rgba(155, 166, 144, 0.56),
+   -15px -15px 15px -1px rgba(248, 248, 248, 0.291);
+  
+
+}
+
+.title{
+   padding-bottom: 20px;
+   color: rgb(27, 27, 33);
+}
+
+
+input, button{
+   width: 12rem;
+   height: 30px;
+   border-radius: 10px;
+   border: none;
+   box-shadow: 10px 10px 10px -1px rgba(155, 166, 144, 0.56),
+   -15px -15px 15px -1px rgba(248, 248, 248, 0.291);
+   background-color: rgba(248, 248, 248, 0.291);
+   outline: none;
+  
+   
+}
+ 
+::placeholder, button::first-line{
+   color: black;
+   font-size: 13px;
+}
+
+button::first-line{
+font-family:cursive;
+font-size: 13px;
+}
