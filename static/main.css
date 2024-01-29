@@ -10,6 +10,7 @@ body{
 }
 
 *{
+
    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
@@ -56,10 +57,19 @@ input, button{
  
 ::placeholder, button::first-line{
    color: black;
-   font-size: 13px;
+   font-size: 15px;
 }
 
 button::first-line{
 font-family:cursive;
-font-size: 13px;
+font-size: 13=5px;
+}
+
+
+input:focus{
+   box-shadow: 2px 1px 20px rgb(183, 156, 230);
+}
+
+button:hover{
+box-shadow: 1px 1px 20px rgb(183, 156, 230);
 }
