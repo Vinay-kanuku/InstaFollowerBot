@@ -3,14 +3,17 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from itertools import islice
 from time import sleep
 from selenium.common.exceptions import ElementClickInterceptedException, TimeoutException, NoSuchElementException
 class InstaBot():
     def __init__(self ):
+        self.s = Service(ChromeDriverManager().install())
         self.chrome_options = webdriver.ChromeOptions()
         self.chrome_options.add_experimental_option("detach", True)
-        self.driver = webdriver.Chrome(options=self.chrome_options)
+        self.driver = webdriver.Chrome(service=self.s, options=self.chrome_options)
          
     def login(self, password, username):
         self.driver.get("https://www.instagram.com/accounts/login/")
